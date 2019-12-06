@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1C555CE1A56A82A6EBB37B8A /* libPods-SwiftLearn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F7670195AA551D1A6658EF23 /* libPods-SwiftLearn.a */; };
+		507873488AFEBAD968462EB8 /* libPods-SwiftLearn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F7670195AA551D1A6658EF23 /* libPods-SwiftLearn.a */; };
 		768EE622239648F0000F71CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768EE621239648F0000F71CE /* AppDelegate.swift */; };
 		768EE624239648F0000F71CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768EE623239648F0000F71CE /* SceneDelegate.swift */; };
 		768EE626239648F0000F71CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768EE625239648F0000F71CE /* ViewController.swift */; };
@@ -37,6 +37,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		768EE7292399E6C6000F71CE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0A8ED499B2E2FD956F89C109 /* Pods-SwiftLearn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftLearn.debug.xcconfig"; path = "Target Support Files/Pods-SwiftLearn/Pods-SwiftLearn.debug.xcconfig"; sourceTree = "<group>"; };
 		75C84F60755CABF2FE7D6F61 /* Pods-SwiftLearn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftLearn.release.xcconfig"; path = "Target Support Files/Pods-SwiftLearn/Pods-SwiftLearn.release.xcconfig"; sourceTree = "<group>"; };
@@ -64,7 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C555CE1A56A82A6EBB37B8A /* libPods-SwiftLearn.a in Frameworks */,
+				507873488AFEBAD968462EB8 /* libPods-SwiftLearn.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +182,7 @@
 				768EE61A239648F0000F71CE /* Sources */,
 				768EE61B239648F0000F71CE /* Frameworks */,
 				768EE61C239648F0000F71CE /* Resources */,
+				768EE7292399E6C6000F71CE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

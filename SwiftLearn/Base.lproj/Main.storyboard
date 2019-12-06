@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,65 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftLearn" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5sm-Op-ucq">
+                                <rect key="frame" x="40" y="233" width="334" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="账号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mbs-By-qVN">
+                                <rect key="frame" x="40" y="188" width="35" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QiH-Gv-78b">
+                                <rect key="frame" x="40" y="344" width="334" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="密码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DlZ-v6-g3l">
+                                <rect key="frame" x="40" y="299" width="35" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h5X-Pm-fOK">
+                                <rect key="frame" x="100" y="454" width="214" height="30"/>
+                                <state key="normal" title="登录"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="5sm-Op-ucq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="0EG-ej-mpc"/>
+                            <constraint firstItem="DlZ-v6-g3l" firstAttribute="leading" secondItem="5sm-Op-ucq" secondAttribute="leading" id="10i-oo-CH5"/>
+                            <constraint firstItem="h5X-Pm-fOK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="1U1-hQ-4aA"/>
+                            <constraint firstItem="5sm-Op-ucq" firstAttribute="leading" secondItem="Mbs-By-qVN" secondAttribute="leading" id="540-j7-gSg"/>
+                            <constraint firstItem="QiH-Gv-78b" firstAttribute="leading" secondItem="DlZ-v6-g3l" secondAttribute="leading" id="BqX-VN-GVb"/>
+                            <constraint firstItem="Mbs-By-qVN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="144" id="DIL-hM-rs5"/>
+                            <constraint firstItem="QiH-Gv-78b" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="WNe-Vh-GpW"/>
+                            <constraint firstItem="5sm-Op-ucq" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="WbA-nV-hgC"/>
+                            <constraint firstItem="h5X-Pm-fOK" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="dkJ-Lw-XXv"/>
+                            <constraint firstItem="h5X-Pm-fOK" firstAttribute="top" secondItem="QiH-Gv-78b" secondAttribute="bottom" constant="76" id="ew3-4M-vqN"/>
+                            <constraint firstItem="DlZ-v6-g3l" firstAttribute="top" secondItem="5sm-Op-ucq" secondAttribute="bottom" constant="32" id="h4A-bC-O2h"/>
+                            <constraint firstItem="QiH-Gv-78b" firstAttribute="top" secondItem="DlZ-v6-g3l" secondAttribute="bottom" constant="24" id="pZi-6x-Utw"/>
+                            <constraint firstItem="5sm-Op-ucq" firstAttribute="top" secondItem="Mbs-By-qVN" secondAttribute="bottom" constant="24" id="uBj-oT-eam"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="loginButton" destination="h5X-Pm-fOK" id="xpb-Y8-uFb"/>
+                        <outlet property="nameTextField" destination="5sm-Op-ucq" id="t7H-qu-ysf"/>
+                        <outlet property="passwordTextField" destination="QiH-Gv-78b" id="YjM-CP-yFe"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
     </scenes>
 </document>

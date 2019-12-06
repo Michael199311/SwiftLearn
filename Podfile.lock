@@ -5,15 +5,12 @@ PODS:
   - RxRelay (5.0.0):
     - RxSwift (~> 5)
   - RxSwift (5.0.0)
-  - RxTest (5.0.0):
-    - RxSwift (~> 5)
   - SnapKit (5.0.1)
   - SwiftyJSON (5.0.0)
 
 DEPENDENCIES:
   - RxCocoa
   - RxSwift
-  - RxTest
   - SnapKit
   - SwiftyJSON
 
@@ -22,7 +19,6 @@ SPEC REPOS:
     - RxCocoa
     - RxRelay
     - RxSwift
-    - RxTest
     - SnapKit
     - SwiftyJSON
 
@@ -30,10 +26,9 @@ SPEC CHECKSUMS:
   RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
   RxRelay: 4f7409406a51a55cd88483f21ed898c234d60f18
   RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
-  RxTest: 4349afe98f564e0a9bc19063368904622d17d49a
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: 77625f03c07d948295b9ee383d955096540f9194
+PODFILE CHECKSUM: 9d9ed55e22951c0d13b2862c80447715b5b32459
 
 COCOAPODS: 1.8.4

@@ -5,7 +5,6 @@ target "SwiftLearn" do
 
 pod "RxSwift"
 pod "RxCocoa"
-pod "RxTest"
 pod "SnapKit"
 pod "SwiftyJSON"
 
